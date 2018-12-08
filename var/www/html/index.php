@@ -1,5 +1,15 @@
+
+
+
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
 <!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--It is the splash page or the landing page of the captive portal.
+	Keep all website related codes at /var/www/html/ or config apache
+	it in such a way that this is the 1st page of the captive 
+	portal. This is important as all other codes work in a systematic condition.
+
+
+	-- >
 <html>
 <head>
 <title>Public Wi-Fi Internet </title>
@@ -44,8 +54,8 @@ any other networks.</li>
 <br><br>
 <b>CLICK ON THE BUTTON BELOW TO GO THE ANOTHER PAGE</b></font></div>
 <div align="center">
-<br><br><br>
-<form name="form1" method="post" action="index1.php">
+<br><br><br> 
+<form name="form1" method="post" action="index1.php"> 
 <span class="bodytext">
 <input type="hidden" id="email" name="email" type="text" value="user@company.com" class="text" accesskey="e" />
 <input type="hidden" name="cmd" value="authenticate" />
