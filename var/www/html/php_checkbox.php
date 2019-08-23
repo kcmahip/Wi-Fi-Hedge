@@ -1,25 +1,17 @@
 <!DOCTYPE html> 
 <html>
 <head> 
-	<title>Wi-Fi</title>
-	
+	<title>WIFI</title>
+	<link rel="stylesheet"  href="css/php_checkbox.css" />
 </head> 
-<style>
-             body {
-                background-image: url(./bg.jpg);            
-                background-size: 100%; 
-		background-origin: content;
-                background-repeat: no-repeat;
-               
-             }
-          </style>
+ <body>
  <div class="container">
 	<div class="main">
 		
-		<h2>This is A Secure Network..</h2><hr/>
-		<form action="index1.php" method="post">
-		<label class="heading"><?php echo "<b>Please select the websites you will be visiting: "."</b>" ?></label><br/>
-                <br/>
+		<h2>Secure Network</h2><hr/>
+		<form action="php_checkbox.php" method="post">
+		<label class="heading"><?php echo "<b>Select the website you want to use:"."</b>" ?></label><br/>
+
 		<input type="checkbox" name="check_list[0]" value="www.google.com"><label>www.google.com</label><br/>
 		<input type="checkbox" name="check_list[1]" value="www.facebook.com"><label>www.facebook.com</label><br/>
 		<input type="checkbox" name="check_list[2]" value="www.youtube.com"><label>www.youtube.com</label><br/>
@@ -44,8 +36,8 @@
 		<input type="checkbox" name="check_list[20]" value="www.msrit.edu"><label>www.msrit.edu</label><br/>
 		
 		
-	<form action="index1.php" method="post">
-		<?php echo "<b>Enter any websites not listed above..</b>"."</br>" ?>
+	<form action="php_checkbox.php" method="post">
+		<?php echo "<b>For additional number of websites</b>"."</br>" ?>
 		<?php $arrlength=5 ?>
 		<?php for($x = 0; $x < $arrlength; $x++){?>
 		<input type="text" name="check_list[<?php $x ?>]" ><label>Please enter the website</label><br/><br/>
@@ -53,13 +45,10 @@
 		<input type="submit" name="submit" Value="Submit"/>
 		<br>
 		<?php include 'checkbox_value.php';?>
-		
-		
-	</form>
+		</form>
 		
 	</div>
 	
  </div>
 </body>
 </html>
-

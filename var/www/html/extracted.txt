@@ -1,0 +1,1 @@
+PING dispatch.kahuna.glbdns2.microsoft.com (65.55.157.204) 56(84) bytes of data.
